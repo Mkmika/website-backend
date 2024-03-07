@@ -62,11 +62,11 @@
         </div>
     </div>
     {{-- Emploi --}}
-    <div class="flex sm:px-[150px] px-[70px] sm:py-[60px] py-[10px] gap-10" id="emplois">
-        @foreach ($emplois as $emploi)
-            @include('emploi', ['donnee' => $emploi ])
-        @endforeach
-    </div>
+        <div class="flex sm:px-[150px] px-[70px] sm:py-[60px] py-[10px] gap-10" id="emplois">
+            @foreach ($emplois as $emploi)
+                @include('emploi', ['donnee' => $emploi ])
+            @endforeach
+        </div>
     <div class="sm:py-[100px]">
         <!-- Services -->
         <div class="flex flex-col gap-7">

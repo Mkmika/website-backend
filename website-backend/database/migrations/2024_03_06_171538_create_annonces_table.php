@@ -14,7 +14,6 @@ return new class extends Migration
         Schema::create('annonces', function (Blueprint $table) {
             $table->id();
             $table->string('nomAnnonce');
-            $table->string("typeAnnonce");
             $table->string("contenu");
             $table->timestamps();
         });
