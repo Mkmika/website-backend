@@ -18,6 +18,7 @@ class AnnonceFactory extends Factory
     {
         return [
             //
+          
         ];
     }
 }

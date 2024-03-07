@@ -16,6 +16,10 @@ return new class extends Migration
             $table->string("titreEmploi");
             $table->string("description");
             $table->string("categorieEmploi");
+            $table->string("anneeExperience");
+            $table->string("nomEntreprise");
+            $table->string("remuneration");
+            $table->string("adresse");
             $table->timestamps();
         });
     }
