@@ -85,7 +85,7 @@
                 Nos Offres
               </a>
 
-              <a href="#nos_annonces"class="flex gap-2 px-[40px] py-[10px]" >
+              <a href="#annonces"class="flex gap-2 px-[40px] py-[10px]" >
                 <img class="w-5 h-5" src="images/pause_button.jpeg" alt="" />
                 Nos Annonces
               </a>

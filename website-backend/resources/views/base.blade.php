@@ -47,7 +47,7 @@
                 Nos Offres
               </a>
 
-              <a href="#nos_annonces"class="flex gap-2 px-[40px] py-[10px]" >
+              <a href="#annonces"class="flex gap-2 px-[40px] py-[10px]" >
                 <img class="w-5 h-5" src="images/pause_button.jpeg" alt="" />
                 Nos Annonces
               </a>
@@ -261,6 +261,12 @@
           </div>
         </div>
       </div>
+     {{--  Annonce --}}
+     <div id="annonces" class="flex flex-col justify-center items-center sm:px-[150px] px-[70px] sm:py-[60px] py-[10px] ">
+        @foreach ($annonces as $annonce)
+            @include('annonce', ['donnee' => $annonce ])
+        @endforeach
+    </div>
 
 
     <!-- testimonies -->
@@ -300,7 +306,6 @@
 
     <!-- Footer -->
     @include('footer')
-
     <script>
         var mobile_menu = document.getElementById("mobile_menu");
         var close = document.getElementById("close");
