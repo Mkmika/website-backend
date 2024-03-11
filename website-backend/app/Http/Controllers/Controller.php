@@ -15,6 +15,6 @@ class Controller extends BaseController
         $annonces = Annonce::all();
         $emplois = Emploi::all();
 
-        return view('index', ['emplois' => $emplois]);
+        return view('index', ['emplois' => $emplois, 'annonces' => $annonces]);
     }
 }
