@@ -1,9 +1,5 @@
-<div class="flex justify-center items-center ">
-    <div class="border w-[27rem] h-[21rem] p-6 rounded-md flex flex-col gap-4 ">
-      <div class="">
-        <!-- Img -->
-        <img src="images/job-list-logo-1.svg"class="icon-shape border rounded-full">
-      </div>
+<a href="{{ route('emploi', ['id' => $donnee['id']]) }}" class="flex justify-center items-center sm:w-2/5 cursor-pointer hover:scale-105 transition-all duration-500">
+    <div class="border p-6 rounded-md flex flex-col gap-4 w-full">
     <!-- text -->
     <div class="">
         <div class="flex justify-between ">
@@ -11,7 +7,7 @@
             <div>
                 <div class=" ">
                   <div class="flex flex-col">
-                      <a href="job-single.html" class="text-inherit ">{{$donnee['titreEmploi']}}</a>
+                      <span href="" class="text-inherit ">{{$donnee['titreEmploi']}}</span>
                       <span class=" w-max p-1 text-sm  leading-none rounded bg-red-200 text-red-600">{{$donnee['categorieEmploi']}}</span>
                   </div>
                   <!-- Job Grid Heaing End-->
@@ -65,4 +61,4 @@
     </div>
     <!-- Job Listing Meta End-->
   </div>
-</div>
+  </a>

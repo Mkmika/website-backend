@@ -1,22 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./output.css" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- choose one -->
-    <script src="https://unpkg.com/feather-icons"></script>
-    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-    <title>Document</title>
-    @vite('resources/css/app.css')
-
-</head>
-<body>
-    <!-- Navbar -->
-    @include('header')
-
     <div class="bg-white">
         <!-- HeroSection -->
         <div class="sm:flex-row sm:justify-between flex flex-col justify-between sm:py-[20px] py-[10px] sm:px-[150px] px-[70px] sm:my-[20px] my-[10px]">
@@ -301,32 +282,3 @@
           </div>
         </div>
       </div>
-
-
-
-    <!-- Footer -->
-    @include('footer')
-    <script>
-        var mobile_menu = document.getElementById("mobile_menu");
-        var close = document.getElementById("close");
-        var menu = document.getElementById("mobile_menu");
-
-
-        function open_mobile_menu()
-        {
-          menu.classList.remove("hidden")
-
-        }
-
-        function close_mobile_menu()
-        {
-          menu.classList.add("hidden")
-
-        }
-
-
-      </script>
-
-
-</body>
-</html>
