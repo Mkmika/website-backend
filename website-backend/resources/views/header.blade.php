@@ -17,7 +17,7 @@
     <a href="{{ route('emplois') }}" class="text-xs hover:text-blue-600 transition-all duration-300 sm:text-sm">
         Emplois
     </a>
-    <a href="contact.html" class="text-xs hover:text-blue-600 transition-all duration-300 sm:text-sm">
+    <a href="{{ route('contact') }}" class="text-xs hover:text-blue-600 transition-all duration-300 sm:text-sm">
         Contactez-nous  
     </a>
     </div>

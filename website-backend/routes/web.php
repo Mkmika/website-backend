@@ -19,6 +19,9 @@ Route::get('/',[Controller::class,'show']);
 Route::get('/a_propos', function(){
     return view('about');
 })->name('a_propos');
+Route::get('contact', function() {
+    return view('contact');
+})->name('contact');
 
 /* Annonce */
 Route::get('/formAnnonce',[AnnonceController::class,'getFormulaireAnnonce'])->name('storeAnnonce');
