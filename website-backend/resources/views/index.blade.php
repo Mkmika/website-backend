@@ -4,28 +4,23 @@
 @section('title', 'Accueil')
 
 @section('content')
-<div class="bg-white">
+<div class="bg-white font-sans">
   <!-- HeroSection -->
   <div class="sm:flex-row sm:justify-between flex flex-col justify-between sm:py-[20px] py-[10px] sm:px-[150px] px-[70px] sm:my-[20px] my-[10px]">
     <div class="flex flex-col gap-6 w-[50%]">
       <div class="flex items-center">
-       <!--  <p class="bg-blue-300 sm:px-7 px-4 rounded-3xl">
-          Bienvenue sur OIPIC - Où les Opportunités prennent Vie
-        </p> -->
       </div>
       <div>
-        <p class="text-xl sm:text-[2.8rem] leading-[56px] font-bold w-75%text-blue-700 uppercase">
+        <p class="text-xl sm:text-[2.8rem] leading-[56px] font-bold w-75%text-blue-700 uppercase font-open-sans">
         Un Univers <span class="text-blue-700">d'Opportunités</span> à votre portée
         </p>
       </div>
       <div class="text-slate-700 text-sm">
-        <p>
+        <p class="font-roboto">
         Notre plateforme dédiée vous
           <span class="text-blue-700">offre un espace dynamique</span>
             pour partager des annonces percutantes et explorer des opportunités
             professionnelles exceptionnelles.
-
-
         </p>
       </div>
       <div class="sm:flex-row flex flex-col gap-5 ">
@@ -48,12 +43,15 @@
       />
   </div>
 </div>
+
 {{-- Emploi --}}
-  <div class="flex sm:px-[150px] px-[70px] sm:py-[60px] py-[10px] gap-10" id="emplois">
+  <div class="flex flex-wrap sm:px-[150px] px-[70px] sm:py-[60px] py-[10px]" id="emplois">
       @foreach ($emplois as $emploi)
           @include('emploi', ['donnee' => $emploi ])
       @endforeach
   </div>
+
+
 <div class="sm:py-[100px]">
   <!-- Services -->
   <div class="flex flex-col gap-7">
@@ -214,6 +212,7 @@
   </div>
 
 </div>
+
 <!-- listes icone -->
 <div class="sm:flex-row flex flex-col sm:px-[150px] px-[70px] sm:py-[20px] py-[10px] sm:justify-between justify-center items-center sm:my-[20px] my-[20px] sm:gap-0 gap-10">
   <div class="flex">
@@ -249,37 +248,9 @@
   </div>
 </div>
 
-
-<!-- testimonies -->
-<div class="flex flex-col gap-10 my-[20px] sm:py-[100px] py-[10px]">
-  <div class="tayc flex flex-col  justify-center items-center">
-    <p class="text-5xl text-blue-700 font-semibold">
-     <span>Témoignages</span> <span class="text-black">Clients</span>
-    </p>
-  </div>
-  <div class="sm:flex-row flex flex-col sm:justify-center sm:items-center justify-center items-center sm:gap-20 gap-10 sm:px-[150px] px-[70px]">
-    <div class="w-[50%]">
-      <img class="w-[350px] h-[350px] " src="images/img6.jpg" alt=""/>
-    </div>
-    <div class="flex flex-col w-[50%]">
-      <p class="text-sm text-gray-400  ">
-        Découvrez les histoires inspirantes de membres OIPIC
-        qui ont trouvé des opportunités exceptionnelles et ont
-        façonné leur avenir professionnel.
-        Leurs témoignages réels reflètent l'impact positif de notre plateforme.
-        Rejoignez-nous pour faire partie de cette
-        communauté dynamique où chaque succès compte.
-        En tant que responsable du recrutement, OIPIC a considérablement
-        amélioré notre processus. La qualité des candidats que nous avons
-        découverts grâce à la plateforme a été exceptionnelle.
-        Les fonctionnalités intuitives ont simplifié chaque étape,
-        de la publication des postes à la sélection des meilleurs talents.
-        Rejoignez OIPIC aujourd'hui et faites partie de cette communauté
-        où chaque histoire professionnelle compte. Les opportunités vous attendent !
-      </p> <br>
-      <p class="text-sm text-blue-700 font-semibold">Ronny Abel</p>
-      <p class="text-xs text-gray-400"> CEO OIPIC</p>
-    </div>
-  </div>
+<div class="sm:px-[150px] my-8">
+  @include('newsletter')
 </div>
+
+@include('testimonial')
 @endsection

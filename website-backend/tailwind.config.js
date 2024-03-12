@@ -7,6 +7,10 @@ export default {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      'open-sans': ['Open sans', 'sans-serif'],
+      'roboto': ['Roboto', 'sans-serif']
+    }
   },
   plugins: [],
 }
