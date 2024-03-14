@@ -1,7 +1,14 @@
 <footer class="relative bg-blue-400 pt-8 pb-6 px-6 sm:px-[50px]">
     <div class="container mx-auto px-4">
       <div class="flex flex-wrap text-left lg:text-left">
-        <div class="w-full lg:w-6/12 px-4">
+        <div class="w-full lg:w-6/12 px-4 ">
+            <div class="mb-6 ">
+                <img
+                    class="sm:w-[60px] w-[60px] sm:h-[40px] h-[20px]"
+                    src="{{ url('/images/logo.jpeg') }}"
+                    alt=""
+                />
+            </div>
           <h4 class="text-3xl fonat-semibold text-blueGray-700">Gardons le contact</h4>
           <h5 class="text-lg mt-0 mb-2 text-blueGray-600">
             Retrouvez nous sur les différents réseaux sociaux
@@ -19,17 +26,25 @@
             <div class="w-full lg:w-4/12 px-4 ml-auto">
               <span class="block uppercase text-blueGray-500 text-sm font-semibold mb-2">Useful Links</span>
               <ul class="list-unstyled">
-                  <li>
-                      <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="#">Accueil</a>
-                  </li>
                 <li>
-                  <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="#">A propos de nous</a>
+                    <a href="/" class="text-blue-500 text-xs sm:text-sm">
+                        Accueil
+                    </a>
                 </li>
                 <li>
-                  <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="#">Nous contacter</a>
+                    <a href="{{ route('a_propos') }}" class="text-xs hover:text-blue-600 transition-all duration-300 sm:text-sm">
+                        A propos de nous
+                    </a>
                 </li>
                 <li>
-                  <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="#">nos offres d'emploi</a>
+                    <a href="{{ route('emplois') }}" class="text-xs hover:text-blue-600 transition-all duration-300 sm:text-sm">
+                        Emplois
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ route('contact') }}" class="text-xs hover:text-blue-600 transition-all duration-300 sm:text-sm">
+                        Contactez-nous
+                    </a>
                 </li>
               </ul>
             </div>
@@ -43,7 +58,7 @@
                   <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="#">Politique de confidentialité</a>
                 </li>
                 <li>
-                  <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="#">Nous contacter</a>
+                  <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="{{ route('contact') }}">Nous contacter</a>
                 </li>
               </ul>
             </div>

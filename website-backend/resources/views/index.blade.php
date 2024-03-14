@@ -29,7 +29,7 @@
           Nos Offres
         </a>
 
-        <a href="#nos_annonces"class="flex gap-2 px-[40px] py-[10px]" >
+        <a href="#annonces"class="flex gap-2 px-[40px] py-[10px]" >
           <img class="w-5 h-5" src="images/pause_button.jpeg" alt="" />
           Nos Annonces
         </a>
@@ -158,7 +158,7 @@
         </div>
     </div>
     <div class="sm:flex-row flex flex-col sm:justify-center sm:items-center justify-center items-center">
-      <a href="contact.html" class="bg-blue-500 transition-all duration-300 hover:bg-blue-700 rounded-full px-10 py-3 text-white">
+      <a href="{{ route('contact') }}" class="bg-blue-500 transition-all duration-300 hover:bg-blue-700 rounded-full px-10 py-3 text-white">
         Contactez-nous
       </a>
     </div>
@@ -204,9 +204,10 @@
         </p>
       </div>
       <div class="sm:flex-row sm:justify-center sm:items-center flex flex-col justify-center items-center">
-        <a href="a_propos.html" class="bg-blue-500 transition-all duration-300 hover:bg-blue-700 rounded-full px-10 py-3 text-white">
+        <a href="{{ route('a_propos') }}" class="bg-blue-500 transition-all duration-300 hover:bg-blue-700 rounded-full px-10 py-3 text-white">
           En Savoir plus
         </a>
+
       </div>
     </div>
   </div>
@@ -248,9 +249,11 @@
   </div>
 </div>
 
-<div class="sm:px-[150px] my-8">
+{{-- Annonces --}}
+<div class="sm:px-[150px] my-8" id="annonces">
   @include('newsletter')
 </div>
 
+{{-- Temoignage --}}
 @include('testimonial')
 @endsection

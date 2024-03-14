@@ -15,6 +15,9 @@ return new class extends Migration
             $table->id();
             $table->string("titreEmploi");
             $table->string("description");
+            $table->string("role");
+            $table->string("responsabilite");
+            $table->string("profil");
             $table->string("categorieEmploi");
             $table->string("anneeExperience");
             $table->string("nomEntreprise");
