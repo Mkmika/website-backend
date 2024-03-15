@@ -6,7 +6,7 @@
                     <div class="flex ">
                         <div class="">
                             <div class="flex flex-col justify-center gap-5">
-                                <div class="text-4xl text-white font-medium w-1/2 ">{{$donnee['nomAnnonce']}}
+                                <divz class="text-4xl text-white font-medium w-1/2 ">{{$donnee['nomAnnonce']}}
                                 </div>
                                 <p class=" text-md font-thin text-gray-300 w-1/2">{{$donnee['contenu']}}
                                 </p>

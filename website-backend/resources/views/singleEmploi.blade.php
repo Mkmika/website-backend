@@ -9,14 +9,13 @@
             <div class="w-full lg:w-2/3 mx-auto md:w-full">
                 <div class="flex flex-col xl:flex-row">
                     <div class="mb-3 md:mb-0">
-                        <img src="" alt="logo" class="h-12 w-12 rounded-full border">
                     </div>
                     <div class="ml-0 xl:ml-3 w-full mt-3 xl:mt-0">
                         <div class="flex justify-between mb-5">
                             <div>
-                                <h1 class="mb-1 text-2xl font-bold">Software Engineer (Web3/Crypto)</h1>
+                                <h1 class="mb-1 text-2xl font-bold">{{ $emploi['titreEmploi'] }}</h1>
                                 <div>
-                                    <span>at HelpDesk</span>
+                                    <span>{{ $emploi['nomEntreprise'] }}</span>
                                     <span class="text-dark ml-2 font-medium">
                                         4.5
                                         <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-star-fill text-yellow-400 align-baseline inline" viewBox="0 0 16 16">
@@ -36,15 +35,15 @@
                             <div class="mb-2 md:mb-0">
                                 <span class="mr-2">
                                     <i class="fe fe-briefcase"></i>
-                                    <span class="ml-1">2 - 6 years</span>
+                                    <span class="ml-1">{{ $emploi['anneeExperience'] }} years </span>
                                 </span>
                                 <span class="mr-2">
                                     <i class="fe fe-dollar-sign"></i>
-                                    <span class="ml-1">Not discloses</span>
+                                    <span class="ml-1">{{ $emploi['remuneration'] }}/mois</span>
                                 </span>
                                 <span class="mr-2">
                                     <i class="fe fe-map-pin"></i>
-                                    <span class="ml-1">Surat, Gujarat</span>
+                                    <span class="ml-1">{{ $emploi['adresse'] }}</span>
                                 </span>
                             </div>
                             <div>
@@ -65,55 +64,29 @@
                 </div>
                 <div class="mt-6">
                     <h2 class="mb-3 text-xl font-semibold">Job description</h2>
-                    <p>Maintains information technology strategies by managing staff; researching, Budgeting and implementing technological strategic solutions.</p>
+                    <p>{{ $emploi['description'] }}</p>
                 </div>
                 <div class="mt-6">
                     <h2 class="mb-3 text-xl font-semibold">Role</h2>
                     <p>
-                        Aliquam pellentesque mollis interdum. Proin ligula lacus, maximus quis ante a, luctus sodales sapien. Donec ut tristique nisi. Nulla a quam sit amet turpis
-                        convallis porttitor vel sed quam. Ut in odio enim. Maecenas eu tellus erat. Maecenas nec maximus elit, ac suscipit justo. Maecenas nisl tellus, sodales non gravida
-                        eget, placerat sit amet erat.
+                        {{ $emploi['role'] }}
                     </p>
                 </div>
                 <div class="mt-6">
                     <h2 class="mb-3 text-xl font-semibold">Responsibilities</h2>
                     <ul class="list-disc pl-5">
-                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elitì</li>
-                        <li>Vivamus maximus sem ac pellentesque tinciduntì</li>
-                        <li>Sed vitae metus in mauris ultricies tempor hendrerit eu nisiì</li>
-                        <li>Sed in odio a lorem porttitor dictum et eget nullaì</li>
-                        <li>Donec molestie tortor sed risus hendrerit, in laoreet diam tinciduntì</li>
-                        <li>Curabitur finibus lacus ac dui placerat venenatisì</li>
-                        <li>Aenean id ligula molestie, pretium ipsum in, varius elit.</li>
+                        {{ $emploi['responsabilite'] }}
                     </ul>
                 </div>
                 <div class="mt-6">
                     <h2 class="mb-3 text-xl font-semibold">Desired Candidate Profile</h2>
                     <ul class="list-disc pl-5">
-                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elitì</li>
-                        <li>Minimum consulting experience of 2 years including Threat Hunting role</li>
-                        <li>Sed vitae metus in mauris ultricies tempor hendrerit eu nisiì</li>
-                        <li>Donec molestie tortor sed risus hendrerit, in laoreet diam tinciduntì</li>
-                        <li>Sed in odio a lorem porttitor dictum et eget nullaì</li>
-                        <li>Curabitur finibus lacus ac dui placerat venenatisì</li>
-                        <li>Aenean id ligula molestie, pretium ipsum in, varius elit.</li>
+                        {{ $emploi['profil'] }}
                     </ul>
                 </div>
-                <div class="mt-6">
-                    <h2 class="mb-3 text-xl font-semibold">Perks and Benefits</h2>
-                    <ul class="list-disc pl-5">
-                        <li>Health insurance</li>
-                        <li>Employee discount</li>
-                        <li>Relocation assistance</li>
-                        <li>Cafeteri</li>
-                        <li>Soft Skill Trainin</li>
-                        <li>Free Transport</li>
-                        <li>Education Assistance</li>
-                        <li>Work From Home</li>
-                    </ul>
-                </div>
-                <div class="mt-5">
-                    <a href="https://geeksui.codescandy.com/geeks/pages/jobs/job-single.html#" class="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Apply for this Job</a>
+
+                <div class="mt-5 flex ">
+                    <a href="" class="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Apply for this Job</a>
                 </div>
             </div>
         </div>

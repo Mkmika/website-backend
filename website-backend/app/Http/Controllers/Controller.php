@@ -13,7 +13,7 @@ class Controller extends BaseController
 
     public function show() {
         $annonces = Annonce::all();
-        $emplois = Emploi::all();
+        $emplois = Emploi::latest()->take(3)->get();
 
         return view('index', ['emplois' => $emplois, 'annonces' => $annonces]);
     }
