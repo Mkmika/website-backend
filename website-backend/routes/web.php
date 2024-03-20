@@ -1,8 +1,11 @@
 <?php
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\AnnonceController;
 use App\Http\Controllers\EmploiController;
+use App\Http\Controllers\NewsLetterControllers;
 use App\Models\Annonce;
+use App\Models\NewsLetter;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,6 +25,10 @@ Route::get('/a_propos', function(){
 Route::get('contact', function() {
     return view('contact');
 })->name('contact');
+/* NewsLetter */
+Route::get('/form',[NewsLetterControllers::class,'getFormulaireNewsletter'])->name('storeNewsletter');
+Route::get('/listeNewsletter',[NewsLetterControllers::class,'listNewsletter'])->name('listNewsletter');
+Route::post('/create/storeNewsletter',[NewsLetterControllers ::class,'storeNewsletter'])->name('storeNewsletter');
 
 /* Annonce */
 Route::get('/formAnnonce',[AnnonceController::class,'getFormulaireAnnonce'])->name('storeAnnonce');
@@ -35,3 +42,4 @@ Route::get('emplois', [EmploiController::class, 'getAll'])->name('emplois');
 Route::get('/emploi/{id}', [EmploiController::class, 'getEmploi'])->name('emploi');
 
 
+Route::post('contact',[ContactController ::class,'sendMessage'])->name('sendMail');

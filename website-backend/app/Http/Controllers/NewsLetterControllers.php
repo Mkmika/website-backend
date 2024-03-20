@@ -8,17 +8,12 @@ use App\Models\NewsLetter;
 class NewsLetterControllers extends Controller
 {
     //
-    public function listNewsLetter(){
-        $newsletters = NewsLetterControllers::all();
-        return  view();
-    }
 
-    public function storeNewsLetter(Request $request){
-        $newsletter = NewsLetterControllers::all();
+    public function storeNewsletter(Request $request){
         NewsLetter::create([
             'email' =>$request->input('email'),
         ]);
-        return redirect();
+        return redirect("/");
     }
 
 }
