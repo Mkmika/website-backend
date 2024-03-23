@@ -48,7 +48,9 @@
     <div class="container">
         
         <div class="message">
-            Hello
+            <p>Nom & Prénom: {{ $maildata['fullname'] }}</p>
+            <p>Email: {{ $maildata['email'] }}</p>
+            <p>Message: {{ $maildata['message'] }}</p>
         </div>
         
     </div>

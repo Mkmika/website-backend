@@ -9,7 +9,7 @@ use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
 
-class WelcomeEmail extends Mailable
+class ContactUsMail extends Mailable
 {
     use Queueable, SerializesModels;
 
@@ -27,7 +27,8 @@ class WelcomeEmail extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'Welcome Email',
+            subject: 'Nous contacter depuis OIPIC',
+            to: "holonouemmanuel0@gmail.com" //Ici, tu mets le mail où tu veux recevoir le message
         );
     }
 
@@ -38,6 +39,9 @@ class WelcomeEmail extends Mailable
     {
         return new Content(
             view: 'emails.contact',
+            with: [
+                'maildata'=> $this->mailData
+            ]
         );
     }
 

@@ -4,7 +4,7 @@
 
 @section('content')
 <div
-    class="max-w-screen-xl mt-24 px-8 grid gap-8 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 py-16 mx-auto  text-gray-900">
+    class="max-w-screen-xl px-8 grid gap-8 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 py-16 mx-auto  text-gray-900">
     <div class="flex flex-col justify-between">
       <div>
         <h2 class="text-4xl lg:text-5xl font-bold leading-tight">Lets talk about everything!</h2>
@@ -511,20 +511,26 @@
       </div>
     </div>
     <form class="flex flex-col" method="POST" action=" {{route('sendMail')}} ">
+      @if (session('success'))
+        <div class="p-4 mb-4 text-sm text-green-800 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400" role="alert">
+            {{ session('success') }}
+        </div>
+      @endif
       @csrf
       <div>
         <span class="uppercase text-sm text-gray-600 font-bold">Full Name</span>
-        <input class="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+        <input name="fullname" class="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
           type="text" placeholder="">
       </div>
       <div class="mt-8">
         <span class="uppercase text-sm text-gray-600 font-bold">Email</span>
-        <input class="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+        <input name="email" class="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
           type="text">
       </div>
       <div class="mt-8">
         <span class="uppercase text-sm text-gray-600 font-bold">Message</span>
         <textarea
+        name="message"
           class="w-full h-32 bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"></textarea>
       </div>
       <div class="mt-8">

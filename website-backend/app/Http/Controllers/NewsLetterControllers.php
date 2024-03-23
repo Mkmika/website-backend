@@ -13,7 +13,7 @@ class NewsLetterControllers extends Controller
         NewsLetter::create([
             'email' =>$request->input('email'),
         ]);
-        return redirect("/");
+        return back()->with("success", "Vous avez bien été enregistré à notre newsletter!!");
     }
 
 }
