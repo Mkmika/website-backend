@@ -28,7 +28,7 @@ class ContactUsMail extends Mailable
     {
         return new Envelope(
             subject: 'Nous contacter depuis OIPIC',
-            to: "holonouemmanuel0@gmail.com" //Ici, tu mets le mail où tu veux recevoir le message
+            to: "mkhoundjenoukon@gmail.com" //Ici, tu mets le mail où tu veux recevoir le message
         );
     }
 
