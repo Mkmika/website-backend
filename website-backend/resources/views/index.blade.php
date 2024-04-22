@@ -63,23 +63,25 @@
       </div>
 
         <div class="sm:flex-row flex flex-col sm:justify-between justify-center items-center sm:px-[150px] px-[70px] sm:gap-8 gap-8 ">
-          <div class="flex flex-col border shadow p-8 rounded-lg gap-3">
-            <img
-              class="w-[60px] h-[60px]"
-              src="images/crm.jpeg"
-              alt=""
-            />
-            <p class="text-xl font-semibold">Annonces d'Opportunités</p>
-            <p class="text-sm text-gray-400 w-[258px] h-[100px]">
-              Explorez des opportunités professionnelles passionnantes.
-              Des offres d'emploi aux projets indépendants,trouvez la
-              meilleure opportunité pour votre carrière.
-            </p>
-            <div>
-
+          <a href="">
+            <div class="flex flex-col border shadow p-8 rounded-lg gap-3">
+              <img
+                class="w-[60px] h-[60px]"
+                src="images/crm.jpeg"
+                alt=""
+              />
+              <p class="text-xl font-semibold">Annonces d'Opportunités</p>
+              <p class="text-sm text-gray-400 w-[258px] h-[100px]">
+                Explorez des opportunités professionnelles passionnantes.
+                Des offres d'emploi aux projets indépendants,trouvez la
+                meilleure opportunité pour votre carrière.
+              </p>
+              <div>
+  
+              </div>
             </div>
-          </div>
-
+  
+          </a>
           <div class="flex flex-col border shadow p-8 rounded-lg gap-3">
             <img
               class="w-[60px] h-[60px]"
@@ -97,23 +99,25 @@
             </div>
           </div>
 
-          <div class="flex flex-col border shadow p-8 rounded-lg gap-3">
-            <img
-              class="w-[60px] h-[60px]"
-              src="images/communities.jpeg"
-              alt=""
-            />
-            <p class="text-xl font-semibold">Formation Continue</p>
-            <p class="text-sm text-gray-400 w-[258px] h-[100px]">
-              Investissez dans le développement de vos compétences.
-              Découvrez des programmes de formation continue adaptés
-              à vos besoins professionnels.
-            </p>
-            <div>
-
+          <a href="{{ route('formationContinue') }}"
+            <div class="flex flex-col border shadow p-8 rounded-lg gap-3">
+                <img
+                  class="w-[60px] h-[60px]"
+                  src="images/communities.jpeg"
+                  alt=""
+                />
+                <p class="text-xl font-semibold">Formation Continue</p>
+                <p class="text-sm text-gray-400 w-[258px] h-[100px]">
+                  Investissez dans le développement de vos compétences.
+                  Découvrez des programmes de formation continue adaptés
+                  à vos besoins professionnels.
+                </p>
+                <div>
+    
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
+          </a>
 
         <div class="sm:flex-row flex flex-col sm:justify-between justify-center items-center sm:px-[150px] px-[70px] sm:gap-8 gap-8 ">
 
@@ -144,17 +148,19 @@
             </div>
           </div>
 
-          <div class="flex flex-col border shadow p-8 rounded-lg gap-3">
-            <img class="w-[60px] h-[60px]" src="images/Erp.jpeg" alt=""/>
-            <p class="text-xl font-semibold">Événements Professionnels</p>
-            <p class="text-sm text-gray-400 w-[258px] h-[75px]">
-              Participez à des événements exclusifs et restez
-              informé des dernières tendances de l'industrie.
-            </p>
-            <div>
-
+          <a href="{{ route('evenements') }}">
+            <div class="flex flex-col border shadow p-8 rounded-lg gap-3">
+              <img class="w-[60px] h-[60px]" src="images/Erp.jpeg" alt=""/>
+              <p class="text-xl font-semibold">Événements Professionnels</p>
+              <p class="text-sm text-gray-400 w-[258px] h-[75px]">
+                Participez à des événements exclusifs et restez
+                informé des dernières tendances de l'industrie.
+              </p>
+              <div>
+  
+              </div>
             </div>
-          </div>
+          </a>
         </div>
     </div>
     <div class="sm:flex-row flex flex-col sm:justify-center sm:items-center justify-center items-center">

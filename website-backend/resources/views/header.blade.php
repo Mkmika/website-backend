@@ -30,16 +30,16 @@
                 <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
             </svg>
             </div>
-            <a href="" class="text-blue-500 text-3xl sm:text-sm">
+            <a href="" class="text-blue-500 text-[40px] sm:text-sm">
             Accueil
             </a>
-            <a href="" class="text-3xl hover:text-blue-600 transition-all duration-300 sm:text-sm">
+            <a href="" class="text-[40px] hover:text-blue-600 transition-all duration-300 sm:text-sm">
             A propos de nous
             </a>
-            <a href="" class="text-3xl hover:text-blue-600 transition-all duration-300 sm:text-sm">
+            <a href="" class="text-[40px] hover:text-blue-600 transition-all duration-300 sm:text-sm">
             Services
             </a>
-            <a href="" class="text-3xl hover:text-blue-600 transition-all duration-300 sm:text-sm">
+            <a href="" class="text-[40px] hover:text-blue-600 transition-all duration-300 sm:text-sm">
             Contactez-nous  
             </a>   
         </div>

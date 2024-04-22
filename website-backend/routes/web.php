@@ -25,6 +25,12 @@ Route::get('/a_propos', function(){
 Route::get('contact', function() {
     return view('contact');
 })->name('contact');
+Route::get('formationContinue', function() {
+    return view('formationContinue');
+})->name('formationContinue');
+Route::get('evenements', function() {
+    return view('evenements');
+})->name('evenements');
 /* NewsLetter */
 Route::get('/form',[NewsLetterControllers::class,'getFormulaireNewsletter'])->name('storeNewsletter');
 Route::get('/listeNewsletter',[NewsLetterControllers::class,'listNewsletter'])->name('listNewsletter');

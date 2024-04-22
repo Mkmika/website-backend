@@ -145,9 +145,7 @@ ul {
                     <div class="flex flex-col gap-5">
                       <p >
                           Chez OIPIC, nous sommes passionnés par la création d'un environnement où les opportunités professionnelles se transforment en réussites exceptionnelles.
-                          Fondée sur le principe que chaque talent compte, notre plateforme dynamique offre bien plus que des annonces d'emploi. Nous sommes une communauté dédiée
-                          à inspirer,connecter et façonner l'avenir professionnel.
-                        </p>
+                          Fondée sur le principe que chaque talent compte, notre plateforme dynamique offre bien plus que des annonces d'emploi. Notre mission consiste a faire de la formation Technique et Professionnelle le levier de notre developpement communautaire.
 
                     </div>
                    
@@ -173,9 +171,7 @@ ul {
                     <div class="flex flex-col gap-5">
 
                         <p>
-                          Notre mission est de fournir une plateforme inclusive qui va au-delà des attentes, favorisant l'innovation, le développement professionnel et le réseautage.
-                          Que vous soyez à la recherche de nouvelles opportunités, d'un talent exceptionnel, ou simplement à 
-                          la quête d'inspiration, OIPIC est l'endroit où vous pouvez explorer, grandir et réussir.
+                          Notre mission est de permettre a chaque citoyen descolarise et defavorise d'apprendre des metiers d'avenir dans les conditions optimales et de les exercer dans un environnement favorable afin de nourrir convenablement son homme.
                         </p>
 
                     </div>
